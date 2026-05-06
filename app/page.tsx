@@ -1,13 +1,15 @@
+'use client';
 import Image from "next/image";
+import { useState } from "react";
 
 import Introduction from "./components/intro";
-import Communnity from "./components/community";
+import Community from "./components/community";
 import Valedictorian from "./components/whyval";
 import ThankYou from "./components/thankyou";
 
 export default function Home() {
 
-  let pageNumber = 1;
+  const [pageNumber, setPageNumber] = useState(1);
 
   return (
     <div className="bg-linear-to-r from-white to-highlight min-h-screen">
@@ -19,12 +21,14 @@ export default function Home() {
           </div>
           <div className="bg-white">
             {pageNumber === 1 && (
-              <Introduction />
+              <Introduction setPageNumber={setPageNumber} />
             )} {pageNumber === 2 && (
-              <Communnity />
+              <Community setPageNumber={setPageNumber} />
             )} {pageNumber === 3 && (
-              <Valedictorian />
-            }
+              <Valedictorian setPageNumber={setPageNumber} />
+            )} {pageNumber === 4 && (
+              <ThankYou setPageNumber={setPageNumber} />
+            )}
           </div>
         </div>
       </div>

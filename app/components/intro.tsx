@@ -1,6 +1,7 @@
 
 
-export default function Introduction() {
+export default function Introduction({ setPageNumber }: { setPageNumber: (page: number) => void }) {
+    
     return (
         <div>
             <div className="grid grid-cols-2 justify-center items-center gap-4">
@@ -13,9 +14,9 @@ export default function Introduction() {
             <hr className="border-border"></hr>
             <div>
                 <div className="flex gap-4 justify-center">
-                    <button className="bg-border text-foreground px-15 py-2 rounded-lg">Community</button>
-                    <button className="bg-highlight text-foreground px-15 py-2 rounded-lg">Valedictorian</button>
-                    <button className="bg-black text-foreground px-15 py-2 rounded-lg">Vote!</button>
+                    <button className="bg-border text-foreground px-15 py-2 rounded-lg" onClick={() => setPageNumber(2)}>Community</button>
+                    <button className="bg-highlight text-foreground px-15 py-2 rounded-lg" onClick={() => setPageNumber(3)}>Valedictorian</button>
+                    <button className="bg-black text-foreground px-15 py-2 rounded-lg" onClick={() => setPageNumber(4)}>Vote!</button>
                 </div>
             </div>
             <div>

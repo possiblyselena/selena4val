@@ -42,7 +42,7 @@ export default function Community({ setPageNumber }: { setPageNumber: (page: num
     return (
         <div className="w-full h-screen bg-white-100 flex flex-col items-center justify-start text-black p-8 gap-8">
             <div>
-                <h1>My Community Involvement</h1>
+                <h1 className="text-3xl font-bold mb-4">My Community Involvement</h1>
                 <p>A lot of the stuff I did is based on STEM education and how much I lacked of it.     Not to brag, but I've done too much stuff that it's too long to write on this tiny website, so please look at the slideshow below to see the stuff I did in high school!</p>
             </div>
             <div className="w-full h-full relative overflow-hidden" id="slideshow">

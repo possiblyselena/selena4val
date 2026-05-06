@@ -12,7 +12,7 @@ export default function Home() {
   const [pageNumber, setPageNumber] = useState(1);
 
   return (
-    <div className="bg-linear-to-r from-white to-highlight min-h-screen">
+    <div className="bg-linear-to-r from-white to-highlight min-h-screen font-sniglet">
       <div className="bg-border flex items-center justify-center p-8 m-45">
         <div>
           <div className="grid grid-cols-2 gap-270 mb-8">

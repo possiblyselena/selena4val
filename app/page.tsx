@@ -15,8 +15,8 @@ export default function Home() {
     <div className="bg-linear-to-r from-white to-highlight min-h-screen font-sniglet">
       <div className="bg-border flex items-center justify-center p-8 m-45">
         <div>
-          <div className="grid grid-cols-2 gap-270 mb-8">
-            <p>UserName</p>
+          <div className="grid grid-cols-2 gap-270 mb-8 text-white">
+            <p>Username</p>
             <p className="bg-gray-500">x</p>
           </div>
           <div className="bg-white">

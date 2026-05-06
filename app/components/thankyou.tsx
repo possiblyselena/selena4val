@@ -2,6 +2,9 @@
 export default function ThankYou({ setPageNumber }: { setPageNumber: (page: number) => void }) {
     return (
         <div>
+            <div>
+                <p>Voting </p>
+            </div>
             <div className="flex gap-4 justify-center">
                     <button className="bg-border text-foreground px-15 py-2 rounded-lg" onClick={() => setPageNumber(1)}>Intro</button>
                     <button className="bg-border text-foreground px-15 py-2 rounded-lg" onClick={() => setPageNumber(2)}>Community</button>

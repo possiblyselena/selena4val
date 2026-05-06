@@ -1,10 +1,31 @@
 @import "tailwindcss";
 
 :root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --border: #061558;
+  --highlight: #99acff;
+  --stars: #facc15;
+  --seashell: #c2e9ff;
   --font-geist-sans: var(--font-sniglet);
   --font-geist-mono: "Courier New", monospace;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-stars: var(--stars);
+  --color-highlight: var(--highlight);
+  --color-seashell: var(--seashell);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 body {
-  font-family: var(--font-sniglet);
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
 }

@@ -16,11 +16,11 @@ export default function Introduction({ setPageNumber }: { setPageNumber: (page: 
                 <p className="font-bold text-sm">I coded this website by scratch btw</p>
             </div>
             <div>
-                <div className="flex gap-4 justify-center m-8">
-                    <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
-                    <button className="bg-border text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
-                    <button className="bg-highlight text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
-                    <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
+                <div className="flex flex-wrap gap-3 justify-center m-8">
+                    <button className="bg-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
+                    <button className="bg-border text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
+                    <button className="bg-highlight text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
+                    <button className="bg-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
                 </div>
             </div>
     

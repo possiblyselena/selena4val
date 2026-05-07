@@ -19,11 +19,11 @@ export default function ThankYou({ setPageNumber }: { setPageNumber: (page: numb
                 <a className="text-2xl text-center bg-highlight p-5 m-6 rounded-lg text-white transition hover:scale-110" href="https://instagram.com/s_nguyen080">Let's Keep in Touch!</a>
             </div>
 
-            <div className="flex gap-4 justify-center m-8">
-                    <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
-                    <button className="bg-border text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
-                    <button className="bg-highlight text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
-                    <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
+            <div className="flex flex-wrap gap-3 justify-center m-8">
+                    <button className="bg-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
+                    <button className="bg-border text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
+                    <button className="bg-highlight text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
+                    <button className="bg-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
                 </div>
         </div>
     );

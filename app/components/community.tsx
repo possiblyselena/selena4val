@@ -90,11 +90,11 @@ export default function Community({ setPageNumber }: { setPageNumber: (page: num
                 <a className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black bg-opacity-50 text-white flex items-center justify-center cursor-pointer z-10" onClick={() => plusSlides(-1)}>&#10094;</a>
                 <a className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black bg-opacity-50 text-white flex items-center justify-center cursor-pointer z-10" onClick={() => plusSlides(1)}>&#10095;</a>
             </div>
-            <div className="flex gap-4 justify-center text-white">
-                <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
-                    <button className="bg-border text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
-                    <button className="bg-highlight text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
-                    <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
+            <div className="flex flex-wrap gap-3 justify-center text-white">
+                <button className="bg-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
+                <button className="bg-border text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
+                <button className="bg-highlight text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
+                <button className="bg-black text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
             </div>
         </div>
     );

@@ -40,12 +40,13 @@ export default function Community({ setPageNumber }: { setPageNumber: (page: num
     }
 
     return (
-        <div className="w-full h-screen bg-white-100 flex flex-col items-center justify-start p-8 gap-8">
-            <div>
-                <h1 className="text-3xl font-bold mb-4">My Community Involvement</h1>
-                <p>My extracurriculars were based on STEM education and how much I lacked of it throughout my childhood is what motivated me to get involved. Not to brag, but I've done too much stuff to write on this tiny website, so please look at the slideshow below to see the stuff I did in high school!</p>
+        <div className="w-full min-h-screen bg-white-100 flex flex-col items-center justify-start p-4 md:p-8 gap-4 md:gap-8">
+            <div className="w-full">
+                <h1 className="text-2xl md:text-3xl font-bold mb-4">My Community Involvement</h1>
+                <hr className="border-dashed border-4 m-4 border-gray-300"></hr>
+                <p className="text-sm md:text-base">My extracurriculars were based on STEM education and how much I lacked of it throughout my childhood is what motivated me to get involved. Not to brag, but I've done too much stuff to write on this tiny website, so please look at the slideshow below to see the stuff I did in high school!</p>
             </div>
-            <div className="w-full h-full relative overflow-hidden" id="slideshow">
+            <div className="w-full h-48 md:h-160 relative overflow-hidden" id="slideshow">
                 <div className="absolute inset-0 hidden">
                     <img src="/slideshow/daydream.jpg" alt="Game Jam" className="w-full h-full object-cover"/>
                     <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">Ran a 24h Game Jam in Hamilton - Sept 2025</div>
@@ -90,9 +91,10 @@ export default function Community({ setPageNumber }: { setPageNumber: (page: num
                 <a className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black bg-opacity-50 text-white flex items-center justify-center cursor-pointer z-10" onClick={() => plusSlides(1)}>&#10095;</a>
             </div>
             <div className="flex gap-4 justify-center text-white">
-                <button className="bg-border text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
-                <button className="bg-highlight text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
-                <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
+                <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(1)}>Intro</button>
+                    <button className="bg-border text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(2)}>Community</button>
+                    <button className="bg-highlight text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(3)}>Valedictorian</button>
+                    <button className="bg-black text-foreground text-white px-15 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-110" onClick={() => setPageNumber(4)}>Vote!</button>
             </div>
         </div>
     );

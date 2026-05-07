@@ -86,15 +86,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-linear-to-r from-white to-highlight min-h-screen font-sniglet flex flex-col items-center justify-center">
+    <div className="bg-linear-to-r from-white to-highlight min-h-screen font-sniglet flex flex-col items-center justify-center px-4 py-6 md:px-8 md:py-10">
       <canvas id="confetti" className="fixed top-0 left-0 w-full h-full pointer-events-none" />
 
-      <div className="bg-border flex items-center justify-center p-4 w-6xl">
+      <div className="bg-border w-full max-w-4xl mx-auto p-4 md:p-6 rounded-3xl shadow-lg">
         <div>
-          <div className="grid grid-cols-2 gap-4 mb-2 text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 text-white">
             <p className="text-lg">s_nguyen080</p>
           </div>
-          <div className="bg-white rounded-lg overflow-hidden">
+          <div className="bg-white rounded-xl overflow-hidden">
             {pageNumber === 1 && <Introduction setPageNumber={setPageNumber} />}
             {pageNumber === 2 && <Community setPageNumber={setPageNumber} />}
             {pageNumber === 3 && <Valedictorian setPageNumber={setPageNumber} />}
@@ -103,12 +103,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-4 p-4 md:p-8">
-        <h1 className="text-lg md:text-2xl text-center">
+      <div className="flex flex-col items-center justify-center gap-4 p-4 md:p-8 w-full max-w-4xl mx-auto">
+        <h1 className="text-base md:text-2xl text-center">
           Please click the button below if you like my work and support my journey!
         </h1>
         <button
-          className="bg-border text-white px-8 py-2 rounded-lg hover:scale-105 transition"
+          className="bg-border text-white w-full md:w-auto px-6 md:px-10 py-3 rounded-lg hover:scale-105 transition"
           onClick={() => burstRef.current?.()}
         >
           Vote!

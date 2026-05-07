@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 
 const slides = [
   {
-    image: '/slideshow/daydream.jpg',
+    image: '/slideshow/daydream.JPG',
     alt: 'Game Jam',
     caption: 'Ran a 24h Game Jam in Hamilton - Sept 2025',
   },
   {
-    image: '/slideshow/flagship.jpg',
+    image: '/slideshow/flagship.JPG',
     alt: 'Hackathon win',
     caption: 'Went to Austin, TX to Win a Hackathon! - March 2025',
   },
@@ -24,7 +24,7 @@ const slides = [
     caption: "Organized Hamilton's Biggest Hackathon - 2024",
   },
   {
-    image: '/slideshow/impactaward.jpg',
+    image: '/slideshow/impactaward.JPG',
     alt: 'Impact Award',
     caption: 'Won the Impact Award at Niagara College - 2026',
   },
@@ -39,12 +39,12 @@ const slides = [
     caption: 'Stayed at UBC Vancouver for a month to do STEM stuff - July 2024',
   },
   {
-    image: '/slideshow/stemleypit.jpg',
+    image: '/slideshow/Stemleypit.jpg',
     alt: 'Drive Team',
     caption: 'Competed in an all-girls drive team and won! - Nov 2024',
   },
   {
-    image: '/slideshow/underground.jpg',
+    image: '/slideshow/underground.JPG',
     alt: 'Cohere AI',
     caption: 'Organized an all-girls coding event at Cohere AI - May 2025',
   },
